@@ -1,0 +1,11 @@
+<!-- previousChapter.html is the products of darshanbaral (https://github.com/darshanbaral/kitab) -->
+{{ if .NextInSection }}
+<div class="navigate">
+  <a
+    href="{{ .NextInSection.Permalink | relURL }}"
+    title="{{ .NextInSection.Title }}"
+  >
+    ◀️
+  </a>
+</div>
+{{ end }}

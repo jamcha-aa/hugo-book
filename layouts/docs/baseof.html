@@ -18,7 +18,8 @@
     <div class="book-page">
       {{ partial "docs/mobile-header" . }}
       {{ template "main" . }}
-      {{ partial "docs/git-footer" . }}
+      {{ partial "docs/previousChapter" . }}
+      {{ partial "docs/nextChapter" . }}
       {{ partial "docs/inject/footer" . }}
     </div>
 
@@ -27,6 +28,13 @@
   
   {{ partial "docs/inject/body" . }}
   {{ template "_internal/google_analytics_async.html" . }}
-</body>
 
+  <script src="https://unpkg.com/vanilla-back-to-top@7.2.0/dist/vanilla-back-to-top.min.js"></script>
+  <script>addBackToTop({
+    diameter: 56,
+    backgroundColor: '#adb5bd',
+    textColor: '#fff'
+  })</script>
+    
+</body>
 </html>
