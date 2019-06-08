@@ -52,6 +52,7 @@ a {
 
 img {
   vertical-align: middle;
+  max-width: 100%;
 }
 
 aside nav ul {
@@ -247,4 +248,8 @@ aside nav,
 .navigate{
  display: inline-block;
  width: 20vw;
+}
+
+.content-card img {
+ max-width: 100%;
 }
